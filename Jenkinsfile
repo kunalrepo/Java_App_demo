@@ -5,7 +5,7 @@ pipeline{
         stage("Git Checkout"){
             steps{
                 script{
-                    git 'https://github.com/kunalrepo/Java_App_demo.git'
+                    git branch: 'main', url: 'https://github.com/kunalrepo/Java_App_demo.git'
                 }
             }
 
